@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Оксана Турянська](https://up.htmlacademy.ru/htmlcss/30/user/198649).
-* Наставник: `Неизвестно`.
+* Наставник: [Дмитрий Дроганов] (https://htmlacademy.ru/profile/dmdragon)
 
 ---
 
