@@ -3,7 +3,12 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="32.ico">
+    <link rel="icon" href="32.svg" type="image/svg+×ml">
+    <link rel="apple-touch-icon" href="img/152.png">
+    <link rel="manifest" href="manifest.webmanifest">
+
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <header>
@@ -14,14 +19,14 @@
         <li><a href="#">Карта штата</a></li>
         <li><a href="catalog.html">Гостиницы</a></li>
       </ul>
-      <a><img src="https://www.figma.com/file/WvNV5uwPC9pouN7WSvnLLN/HTML-1-_-%D0%A1%D0%B5%D0%B4%D0%BE%D0%BD%D0%B0?node-id=0%3A221" width="138" height="70" alt="logo SEDONA"/></a>
+      <a><img src="img/logo.svg" width="138" height="70" alt="logo SEDONA"/></a>
     </nav>
     </header>
 
     <main>
       <section>
         <h1>Sedona</h1>
-        <div>
+        <div class="main-border">
           <svg width="189" height="46" viewBox="0 0 189 46" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path fill-rule="evenodd" clip-rule="evenodd" d="M60.824 37.364V45.1H40.008V0.352997H60.824V8.023H47.624V18.827H58.159V26.497H47.624V37.363L60.824 37.364ZM82.17 45.1V37.364L71.573 37.363V0.352997H63.957V45.1H82.17ZM188.7 45.1V37.364H175.499V26.497H186.034V18.827H175.499V8.024H188.7V0.352997H167.884V45.1H188.7ZM163.459 0.353997H155.908L149.115 21.959L142.324 0.353997H134.772V45.101H142.389V23.111L145.371 34.489H152.796L155.843 23.111V45.101H163.459V0.353997ZM123.999 8.024H118.476V37.364H124L123.999 8.024ZM131.679 5.085C131.679 2.463 129.521 0.353997 126.981 0.353997L115.557 0.354997C112.957 0.354997 110.861 2.464 110.861 5.085V40.37C110.861 42.927 112.957 45.1 115.557 45.1H126.981C129.521 45.1 131.679 42.927 131.679 40.37V5.085ZM98.971 28.606L106.649 26.816V40.368C106.649 42.925 104.492 45.098 101.953 45.098H90.528C87.928 45.098 85.833 42.925 85.833 40.368V5.084C85.833 2.462 87.928 0.353997 90.528 0.353997H101.951C104.491 0.353997 106.648 2.462 106.648 5.084V14.161L98.97 15.951V8.023H93.448V37.363H98.97L98.971 28.606ZM36.241 0.353997H28.564L27.994 37.364H27.232L22.344 0.353997H14.792L10.032 37.364H9.20803L8.57303 0.353997H0.957031L2.09903 45.1H16.632L18.599 26.626L20.567 45.1H35.037L36.241 0.353997Z" fill="#81B3D3"/>
           </svg>
@@ -34,9 +39,11 @@
 
           
         </div>
+        
         <svg width="1200" height="57" viewBox="0 0 1200 57" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path d="M0 57V0L250 24V0L600 57L950 0V24L1200 0V57H0Z" fill="white"/>
-        </svg>          
+        </svg>  
+
       </section>
       <section>
         <h2>Наши преимущества</h2>
@@ -48,7 +55,7 @@
               <p>— №1 — </p>
               <p>Седона - не аттракцион для туристов, там течёт своя жизнь</p>
           </li>
-          <li></li>
+          <li><img src="img/image_section_1_1.jpg" width="800" height="256" alt="photo of the city of Sedona"></li>
           <li></li>
           <li>
             <ul>
@@ -86,7 +93,7 @@
               </li>
             </ul>
           </li>
-          <li></li>
+          <li><img src="img/image_section_1_2.jpg" width="800" height="256" alt="photo of the canyon in Sedona"></li>
           <li></li>
           <li>
             
@@ -122,7 +129,7 @@
         <h2>Карта</h2>
         <h2>Заинтересовались?</h2>
         <p>Укажите предполагаемые даты поездки,  и мы покажем вам лучшие предложения гостиниц в седоне</p>
-        <!-- the map-->
+        <img src="img/map.png" width="1199" height="594" alt="local map">
       </section>
       <section>
         <button type="button">Поиск гостинницы в Седоне</button>        
@@ -140,7 +147,7 @@
       <label for="hotel-number_of_children">Дети:
         <input type="number" name="hotel-number_of_children" id="hotel-number_of_children" Value="0" min="0" max="5" step="1">
       </label>
-      <button type="button">Найти</button>
+      <button type="submit">Найти</button>
       </form>
       </section>
     </main>
@@ -153,21 +160,27 @@
       </section>
       <section>
         <h2>Социальные сети</h2>
+           <div class="blue-squere">
             <a href="#">Twitter
             <svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M10.95 1.14409C12.635 0.648089 13.934 1.41409 14.527 2.32309C15.2 2.09209 15.858 1.84209 16.538 1.61509C16.5249 2.30145 16.2117 2.94761 15.681 3.38309C16.366 3.55309 16.985 2.89209 16.985 2.89209C16.816 3.89209 15.979 4.68009 15.422 4.91609C15.191 11.6661 12.247 16.1331 5.34498 15.9981H4.89898C4.48898 15.9981 0.734977 15.5381 0.000976562 14.1111C2.27198 14.3071 3.89398 13.6891 4.69398 12.9341C3.73398 12.6341 2.01498 12.4571 1.71498 9.98409C2.06398 10.0901 2.27898 10.2121 2.90498 10.1031C1.70498 9.24709 0.373977 8.53009 0.447977 6.33009C0.732977 6.65809 1.51498 6.86609 1.78798 6.80209C1.08498 6.56109 -0.182023 3.44209 0.893977 1.85009C2.71198 3.70409 4.62898 5.45609 8.04598 5.62309C8.25398 3.33009 9.18298 1.79309 10.95 1.14409Z" fill="white"/>
             </svg>
           </a>
+          </div>
+          <div class="blue-squere">
             <a href="#">Facebook
             <svg width="12" height="22" viewBox="0 0 12 22" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M12 4V0H8C5.79086 0 4 1.79086 4 4V8H0V12H4V22H8V12H12V8H8V4H12Z" fill="white"/>
               </svg>
             </a>
+            </div>
+            <div class="blue-squere">
               <a href="#">Youtube
               <svg width="20" height="16" viewBox="0 0 20 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path fill-rule="evenodd" clip-rule="evenodd" d="M3 0H17C18.65 0 20 1.35 20 3V13C20 14.65 18.65 16 17 16H3C1.35 16 0 14.65 0 13V3C0 1.35 1.35 0 3 0ZM6.027 4.002V11.998L15.014 8L6.027 4.002Z" fill="white"/>
                 </svg>
               </a>
+              </div>
       </section>
       <section>
         <h1>Копирайт</h1>
