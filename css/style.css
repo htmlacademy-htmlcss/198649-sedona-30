@@ -1,0 +1,21 @@
+body {
+    
+}
+
+.main-border {
+    background: url('../img/main-border.jpg') no-repeat;
+    width: 1200px;
+    height: 509px;
+}
+
+.blue-squere {
+    width: 46px;
+    height: 48 px;
+    background-color: #81B3D2;
+}
+
+.filters-back {
+    background: url('../img/background_catalog_filter.jpg') no-repeat;
+    width: 1200px;
+    
+}
