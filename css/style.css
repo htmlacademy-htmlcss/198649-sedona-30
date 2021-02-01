@@ -65,9 +65,9 @@
 }
 
 .main-border {
-  background-image: url('../img/main-border.jpg'), url('../img/mask_main-border.svg');
+  background-image: url('../img/mask_main-border.svg'), url('../img/main-border.jpg');
   background-repeat: no-repeat;
-  background-position: 40px;
+  background-position: left bottom, left center;
   width: 1200px;
   height: 509px;
   background-color: var(--background-li);
@@ -130,9 +130,10 @@
   font-weight: 700;
 }
 
-.button.serch-hotels {
-  height: 58px;
-  width: 458px;
+.button.search-hotels {
+  padding: 16px 182px;
+  background: none;
+  border: none;
   background-color: var(--basic-blue);
 }
 
