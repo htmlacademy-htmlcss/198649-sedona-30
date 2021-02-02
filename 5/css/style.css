@@ -65,7 +65,9 @@
 }
 
 .main-border {
-  background: url('../img/main-border.jpg') no-repeat 40px;
+  background-image: url('../img/mask_main-border.svg'), url('../img/main-border.jpg');
+  background-repeat: no-repeat;
+  background-position: left bottom, left center;
   width: 1200px;
   height: 509px;
   background-color: var(--background-li);
@@ -110,6 +112,7 @@
   width: 568px;
   height: 86px;
   font-weight: 700;
+  border: none;
 }
 
 .button.search-hotels-form:hover {
@@ -118,7 +121,7 @@
 
 .button.search-hotels-form:active {
   background-color: var(--brown-active);
-
+  border: none;
 }
 
 .form-modal.search-hotels {
@@ -127,9 +130,10 @@
   font-weight: 700;
 }
 
-.button.serch-hotels {
-  height: 58px;
-  width: 458px;
+.button.search-hotels {
+  padding: 16px 182px;
+  background: none;
+  border: none;
   background-color: var(--basic-blue);
 }
 
@@ -140,6 +144,7 @@
 .button.search-hotels:active{
   background-color: var(--blue-active);
   opacity: 0.3;
+  border: none;
 }
 
 .search-hotels input {
@@ -176,7 +181,7 @@
   color: var(--basic-black);
 }
 
-
+/* hidden h2 */
 
 .hidden {
   visibility: hidden;
@@ -207,7 +212,7 @@
   fill: var(--basic-blue);
 }
 
-.copyright-button svg-active {
+.copyright-button svg:active {
   fill: #BDBBBC;
 }
 
@@ -216,3 +221,5 @@
   width: 1200px;
   background-color: var(--background-li);
 }
+
+
