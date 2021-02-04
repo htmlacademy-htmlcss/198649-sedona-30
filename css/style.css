@@ -37,10 +37,10 @@
 }
 
 .background-shadow {
-  min-width: 1240px;
+  width: 1200px;
   margin: 0 auto;
   text-align: center;
-  background-color: var(--basic-bacground);
+  box-shadow: 0 0 40px 0 var(--basic-bacground);
 }
 
 .page-body {
@@ -100,16 +100,18 @@
 .main-border {
   background-image: url('../img/mask_main-border.svg'), url('../img/main-border.jpg');
   background-repeat: no-repeat;
-  background-position: left bottom, left center;
+  background-position: left 452px, left center;
   width: 1200px;
-  height: 509px;
+  height: 508px;
   background-color: var(--background-li);
   margin: 0 auto;
+  position: relative;
 }
 
 .text-border {
-  text-align: center;
-  vertical-align: middle;
+  position: absolute;
+  top: 15%;
+  right: 30%;
 }
 
 .features-grid {
@@ -117,7 +119,10 @@
   width: 1200px;
   background-color: var(--basic-white);
   vertical-align: middle;
-  margin: 0 auto;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .features-sedona {
@@ -157,6 +162,9 @@
 .second {
   grid-column: -2/-1;
   grid-row: 2/3;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .third {
@@ -180,6 +188,14 @@
   display: grid;
   grid-template-columns: 400px 400px 400px;
   grid-template-rows: 256px 330px;
+}
+
+.text-content_item {
+  grid-column: 1/2;
+  grid-row: 1/2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .first-foto {
@@ -230,9 +246,9 @@
 .another,
 .map-img {
   background-color: var(--background-li);
-  vertical-align: middle;
-  text-align: center;
-  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .button {
@@ -304,9 +320,6 @@
   height: auto;
   line-height: 26px;
   margin: 0 auto;
-  background-color: rgba(255, 255, 255, 0.9);
-  outline: 5px solid rgba(255, 0, 0, 0.7);
-  outline-offset: -5px;
   display: grid;
   grid-template-columns: 400px 400px 400px;
 }
