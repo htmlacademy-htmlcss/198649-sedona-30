@@ -16,15 +16,19 @@
 </head>
 
 <body class="page-body">
+  <div class="background-shadow">
     <header class="main-header">
         <nav class="main-navigation">
-            <ul class="site-navigation">
+            <ul class="site-navigation first-navigation">
                 <li><a class="navigation-item" href="#">Информация</a></li>
                 <li><a class="navigation-item" href="#">Фото и видео</a></li>
+            </ul>
+            <a class="main-header-logo"><img src="img/logo.svg" width="138" height="70" alt="logo SEDONA" /></a>
+            <ul class="site-navigation second-navigation">
                 <li><a class="navigation-item" href="#">Карта штата</a></li>
                 <li><a class="navigation-item" href="catalog.html">Гостиницы</a></li>
             </ul>
-            <a class="main-header-logo"><img src="img/logo.svg" width="138" height="70" alt="logo SEDONA" /></a>
+
         </nav>
     </header>
 
@@ -50,9 +54,7 @@
                     <h2 class="features-head">Настоящий городок </h2>
                     <p>— №1 — </p>
                     <p>Седона - не аттракцион для туристов, там течёт своя жизнь</p>
-                </li>
-                <li class="features-item first-foto"><img src="img/index_advantage_first.jpg" width="800" height="256" alt="photo of the city of Sedona"></li>
-                <li class="features-item sublist">
+                    <img class="first-foto" src="img/index_advantage_first.jpg" width="800" height="256" alt="photo of the city of Sedona">
                     <ul class="future-adventure">
                         <li class="future-adventure-item first-adventure">
 
@@ -62,7 +64,7 @@
               <path fill-rule="evenodd" clip-rule="evenodd" d="M37.656 34.7929C33.376 34.7929 29.906 31.3409 29.906 27.0799C29.906 22.8209 33.375 19.3669 37.656 19.3669C41.935 19.3669 45.406 22.8209 45.406 27.0799C45.406 31.3409 41.935 34.7929 37.656 34.7929ZM42.625 27.0799C42.625 24.3489 40.4 22.1349 37.656 22.1349C34.911 22.1349 32.686 24.3489 32.686 27.0799C32.686 29.8119 34.91 32.0279 37.656 32.0279C40.4 32.0279 42.625 29.8119 42.625 27.0799ZM17.061 41.2099H20.061V45.1289H17.061V41.2099ZM25.999 41.2099H22.999V45.1289H25.999V41.2099ZM17.061 47.1819H20.061V51.1009H17.061V47.1819ZM25.999 47.1819H22.999V51.1009H25.999V47.1819ZM48.998 41.2099H51.998V45.1289H48.998V41.2099ZM57.936 41.2099H54.936V45.1289H57.936V41.2099ZM48.998 47.1819H51.998V51.1009H48.998V47.1819ZM57.936 47.1819H54.936V51.1009H57.936V47.1819Z" fill="#81B3D2"/>
                             </svg>
                             <p class="features-head">Жильё</p>
-                            <p>Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
+                            <p>Рекомендуем пожить в настоящем<br/> мотеле, всё как в кино!</p>
 
                         </li>
                         <li class="future-adventure-item second-adventure">
@@ -74,7 +76,7 @@
                 <path d="M45.732 12.26C46.8068 12.26 47.678 11.3511 47.678 10.23C47.678 9.10881 46.8068 8.19995 45.732 8.19995C44.6573 8.19995 43.786 9.10881 43.786 10.23C43.786 11.3511 44.6573 12.26 45.732 12.26Z" fill="#81B3D2"/>
                             </svg>
                             <p class="features-head">Еда</p>
-                            <p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+                            <p>Всегда заказывайте фирменный бургер,<br/> вы не разочаруетесь!</p>
 
                         </li>
                         <li class="future-adventure-item third-adventure">
@@ -83,12 +85,11 @@
                 <path fill-rule="evenodd" clip-rule="evenodd" d="M61.097 22.501H36.312C50.125 15.602 51.229 11.25 50.72 8.816C49.558 4.853 45.028 1.793 40.718 3.409C35.149 5.498 33.581 13.797 32.074 19.796C30.15 13.726 28.29 5.982 23.938 2.059C22.677 0.920999 20.843 -0.205001 18.175 0.0309991C14.149 0.386999 8.373 5.413 10.717 11.012C12.968 16.39 20.404 19.789 25.295 22.501H2.879C1.29355 22.5026 0.00715075 23.7846 0 25.37V36.692C0.00715075 38.2774 1.29355 39.5594 2.879 39.561H3.153V76H60.994V39.561H61.097C62.6828 39.5599 63.9698 38.2778 63.977 36.692V25.37C63.9698 23.7842 62.6828 22.5021 61.097 22.501ZM42.413 5.944C44.516 5.634 47.395 7.243 47.668 9.153C48.061 11.909 44.268 14.408 42.582 15.574C40.059 17.318 37.654 18.217 35.295 19.629C36.179 15.939 37.844 6.618 42.413 5.944ZM19.531 15.912C17.306 14.427 12.987 11.481 13.091 8.141C13.203 4.546 18.834 1.571 21.905 4.255C25.761 7.626 27.618 15.36 29.024 20.812C25.775 19.273 22.696 18.024 19.531 15.912ZM25.503 73.026H6.136V39.561H25.504V73.026H25.503ZM25.503 36.524H3.046V25.538H25.503V36.524ZM35.66 36.524V73.027H28.486V25.538H35.66V36.524ZM58.011 73.026H38.644V39.561H58.011V73.026ZM60.931 36.524H38.644V25.538H60.931V36.524Z" fill="#81B3D2"/>
                             </svg>
                             <p class="features-head">Сувениры</p>
-                            <p>Не только китайского, но и местного производства!</p>
+                            <p>Не только китайского, но и местного<br/> производства!</p>
 
                         </li>
                     </ul>
-                </li>
-                <li class="features-item second-foto"><img src="img/index_advantage_second.jpg" width="800" height="256" alt="photo of the canyon in Sedona"></li>
+                <li><img class="second-foto" src="img/index_advantage_second.jpg" width="800" height="256" alt="photo of the canyon in Sedona"></li>
                 <li class="features-item second blue-back">
 
                     <h2 class="features-head">Там есть Мост дьявола</h2>
@@ -100,21 +101,21 @@
 
                     <h2 class="features-head">небольшая площадь</h2>
                     <p>— №3 —</p>
-                    <p>все достопримечательности находятся очень близко</p>
+                    <p>все достопримечательности<br/> находятся очень близко</p>
 
                 </li>
                 <li class="features-item another fourth">
 
                     <h2 class="features-head">красивая дорога</h2>
                     <p>— №4 —</p>
-                    <p>ехать в седону из лас-вегаса совсем не скучно!</p>
+                    <p>ехать в седону из лас-вегаса<br/> совсем не скучно!</p>
 
                 </li>
                 <li class="features-item another fiveth">
 
                     <h2 class="features-head">мало туристов</h2>
                     <p>— №5 —</p>
-                    <p>большинство едет в гранд каньон и толпится там</p>
+                    <p>большинство едет в гранд каньон<br/> и толпится там</p>
 
                 </li>
             </ul>
@@ -124,7 +125,9 @@
             <h2>Заинтересовались?</h2>
             <p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
             <button class="button search-hotels-form" type="button">Поиск гостинницы в Седоне</button>
-            <img class="map-img" src="img/map.png" width="1199" height="594" alt="local map">
+            <p>
+              <img class="map-img" src="img/map.png" width="1199" height="594" alt="local map">
+            </p>
         </section>
 
         <section class="form-modal search-hotels">
@@ -164,14 +167,14 @@
             <h2 class="hidden">Социальные сети</h2>
             <div class="blue-squere twitter">
                 <a class="social-button" href="#">
-                    <svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <svg class="twitter-svg" width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M10.95 1.14409C12.635 0.648089 13.934 1.41409 14.527 2.32309C15.2 2.09209 15.858 1.84209 16.538 1.61509C16.5249 2.30145 16.2117 2.94761 15.681 3.38309C16.366 3.55309 16.985 2.89209 16.985 2.89209C16.816 3.89209 15.979 4.68009 15.422 4.91609C15.191 11.6661 12.247 16.1331 5.34498 15.9981H4.89898C4.48898 15.9981 0.734977 15.5381 0.000976562 14.1111C2.27198 14.3071 3.89398 13.6891 4.69398 12.9341C3.73398 12.6341 2.01498 12.4571 1.71498 9.98409C2.06398 10.0901 2.27898 10.2121 2.90498 10.1031C1.70498 9.24709 0.373977 8.53009 0.447977 6.33009C0.732977 6.65809 1.51498 6.86609 1.78798 6.80209C1.08498 6.56109 -0.182023 3.44209 0.893977 1.85009C2.71198 3.70409 4.62898 5.45609 8.04598 5.62309C8.25398 3.33009 9.18298 1.79309 10.95 1.14409Z" fill="white"/>
             </svg>
                 </a>
             </div>
             <div class="blue-squere facebook">
                 <a class="social-button" href="#">
-                    <svg width="12" height="22" viewBox="0 0 12 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <svg class="facebook-svg" width="12" height="22" viewBox="0 0 12 22" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M12 4V0H8C5.79086 0 4 1.79086 4 4V8H0V12H4V22H8V12H12V8H8V4H12Z" fill="white"/>
               </svg>
                 </a>
@@ -180,7 +183,7 @@
             <div class="blue-squere youtube">
 
                 <a class="social-button" href="#">
-                    <svg width="20" height="16" viewBox="0 0 20 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <svg class="youtube-svg" width="20" height="16" viewBox="0 0 20 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path fill-rule="evenodd" clip-rule="evenodd" d="M3 0H17C18.65 0 20 1.35 20 3V13C20 14.65 18.65 16 17 16H3C1.35 16 0 14.65 0 13V3C0 1.35 1.35 0 3 0ZM6.027 4.002V11.998L15.014 8L6.027 4.002Z" fill="white"/>
                 </svg>
                 </a>
@@ -200,6 +203,7 @@
             </a>
         </section>
     </footer>
+  </div>
 
 </body>
 
