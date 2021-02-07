@@ -418,7 +418,25 @@
 .filters-back {
   background: url('../img/catalog_filter.jpg') no-repeat;
   width: 1200px;
+  min-height: 216px;
   background-color: var(--background-li);
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: 200px 400px 600px;
+  align-content: start;
+}
+
+.choice-of-hotels {
+  grid-column: 1/2;
+}
+
+.type-of-housing {
+  grid-column: 2/3;
+}
+
+.cost-of-housing {
+  grid-column: 3/4;
 }
 
 .container-inside ul {
@@ -465,6 +483,23 @@
   color: var(--basic-black);
 }
 
+.suggestion-found {
+  display: grid;
+  grid-template-columns: 200px 1fr 200px;
+}
+
+.searched-result {
+  grid-column: 1/2;
+}
+
+.suggestion-options {
+  grid-column: 2/3;
+}
+
+.sort-by{
+  grid-column: 3/4;
+}
+
 .suggestions-item {
   font-size: 12px;
   line-height: 18px;
@@ -505,6 +540,34 @@
   text-decoration: none;
 }
 
+.hotels-found {
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-rows: auto auto auto;
+}
+
+.hotels-found-item {
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: 200px auto 200px;
+}
+
+.first-column {
+  grid-column: 1/2;
+  grid-row: 1/-1;
+}
+
+.second-column {
+  grid-column: 2/3;
+
+}
+
+.third-column{
+  grid-column: 4/5;
+}
+
 .hotel-name {
   line-height: 26px;
   font-size: 21px;
@@ -528,6 +591,7 @@
   color: var(--rating-color);
   text-align: center;
   vertical-align: middle;
+  margin-left: 150px;
 }
 
 .hotel-detail {
@@ -567,3 +631,16 @@
 .book-order:active {
   background-color: var(--brown-active);
 }
+
+.suggestion-found {
+  min-height: 86px;
+  margin: 0;
+  padding: 0;
+}
+
+.searched-result {
+  font-size: 21px;
+  font-weight: 700;
+}
+
+
