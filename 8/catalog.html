@@ -37,7 +37,7 @@
     <main class="container-inside">
       <section class="filters-back">
         <h1 class="hidden">Filter hotel-search</h1>
-        <form clas="choice-of-hotels" action="https://echo.htmlacademy.ru/" method="post">
+        <form class="choice-of-hotels" action="https://echo.htmlacademy.ru/" method="post">
               <fieldset class="infrastructure">
                   <legend>Инфраструктура:</legend>
                   <ul class="infrastructure-options">
@@ -72,7 +72,6 @@
                     </li>
                   </ul>
               </fieldset>
-              <div class="third-filter">
                 <fieldset class="cost-of-housing">
                   <legend>Стоимость в сутки (Р):</legend>
                   <ul class="cost-of-housing-options">
@@ -86,7 +85,6 @@
                   <input class="range-item" type="range" min="0" max="3000" value="100">
                  </fieldset>
                  <button class="button search-of-hotels" type="submit">Показать</button>
-                </div>
           </form>
       </section>
       <section class="suggestions-found">
@@ -98,41 +96,41 @@
               <li><a class="suggestions-item" href="#">По рейтингу</a></li>
           </ul>
           <div class="sort-by">
-          <a class="sort-up" href="#">
-          <svg width="11" height="10" viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M5.5 0L0 10H11L5.5 0Z"/>
-          </svg>
-          </a>
-          <a class="sort-down" href="#">
-          <svg width="11" height="10" viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <a class="sort-up" href="#">
+              <svg width="11" height="10" viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M5.5 0L0 10H11L5.5 0Z" fill="#CACACA"/>
+              </svg>
+            </a>
+            <a class="sort-down" href="#">
+            <svg width="11" height="10" viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M5.5 10L0 0H11"/>
-           </svg>
-           </a>
+            </svg>
+            </a>
           </div>
       </section>
       <section class="hotels-found">
           <h1 class="hidden">Hotels Found</h1>
           <ul class="hotels-found-option">
               <li class="hotels-found-item">
-                <div class="first-column">
+                <div class="column-hotel-photo">
                   <a href="#">
                       <p class="hotel-photo">
                           <img src="img/amara_resort.jpg" width="135" height="90" alt="foto Amara Resort & Spa">
                       </p>
                   </a>
                   </div>
-                  <div class="second-column">
+                  <div class="column-hotel-detail">
                   <a href="#"><h2 class="hotel-name">Amara Resort & Spa</h2></a>
-                  <div class="second-row">
+                  <div class="row-hotel-type">
                   <p class="hotel-type">Гостиница</p>
                   <p class="hotel-price">От 4000 Р.</p>
                   </div>
-                  <p class="third-row">
+                  <p class="row-hotel-buttons">
                       <button class="hotel-detail" type="button">Подробнее</button>
                       <button class="book-order" type="button">Забронировать</button>
                   </p>
                   </div>
-                  <div class="third-column">
+                  <div class="column-hotel-rating">
                   <p class="rating-star">
                     <svg width="91" height="17" viewBox="0 0 91 17" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <path d="M9.002 0L11.128 6.494H18.005L12.441 10.506L14.566 17L9.002 12.987L3.438 17L5.564 10.506L0 6.494H6.878L9.002 0Z" fill="#81B3D2"/>
@@ -147,25 +145,25 @@
                   </div>
               </li>
               <li class="hotels-found-item">
-                <div class="first-column">
+                <div class="column-hotel-photo">
                 <a href="#">
                     <p class="hotel-photo">
                         <img src="img/desert_quail.jpg" width="135" height="90" alt="foto Desert Quail Inn">
                     </p>
                 </a>
                 </div>
-                <div class="second-column">
+                <div class="column-hotel-detail>
                 <a href="#"><h2 class="hotel-name">Desert Quail Inn</h2></a>
-                <div class="second-row">
+                <div class="row-hotel-type">
                 <p class="hotel-type">Мотель</p>
                 <p class="hotel-price">От 3000 Р.</p>
                 </div>
-                <p class="third-row">
+                <p class="row-hotel-buttons">
                     <button class="hotel-detail" type="button">Подробнее</button>
                     <button class="book-order" type="button">Забронировать</button>
                 </p>
                 </div>
-                <div class="third-column">
+                <div class="column-hotel-rating">
                 <p class="rating-star">
                   <svg width="66" height="17" viewBox="0 0 66 17" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M9.002 0L11.128 6.494H18.005L12.441 10.506L14.566 17L9.002 12.987L3.438 17L5.564 10.506L0 6.494H6.878L9.002 0Z" fill="#81B3D2"/>
@@ -179,25 +177,25 @@
                 </div>
             </li>
             <li class="hotels-found-item">
-                <div class="first-column">
+                <div class="column-hotel-photo">
                 <a href="#">
                     <p class="hotel-photo">
                         <img src="img/villas_at_poco_diablo.jpg" width="135" height="90" alt="Villas at Poco Diablo">
                     </p>
                 </a>
                 </div>
-                <div class="second-column">
+                <div class="column-hotel-detail">
                 <a href="#"><h2 class="hotel-name">Villas at Poco Diablo</h2></a>
-                <div class="second-row">
+                <div class="row-hotel-type">
                 <p class="hotel-type">Апартаменты</p>
                 <p class="hotel-price">От 2000 Р.</p>
                 </div>
-                <p class="third-row">
+                <p class="row-hotel-buttons">
                     <button class="hotel-detail" type="button">Подробнее</button>
                     <button class="book-order" type="button">Забронировать</button>
                 </p>
                 </div>
-                <div class="third-column">
+                <div class="column-hotel-rating">
                 <p class="rating-star">
                   <svg width="42" height="17" viewBox="0 0 42 17" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M9.002 0L11.128 6.494H18.005L12.441 10.506L14.566 17L9.002 12.987L3.438 17L5.564 10.506L0 6.494H6.878L9.002 0Z" fill="#81B3D2"/>
