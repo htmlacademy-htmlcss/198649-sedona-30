@@ -24,7 +24,7 @@
               <li><a class="navigation-item" href="#">Информация</a></li>
               <li><a class="navigation-item" href="#">Фото и видео</a></li>
           </ul>
-          <a class="main-header-logo"><img src="img/logo.svg" width="138" height="70" alt="logo SEDONA" /></a>
+          <a href="index.html" class="main-header-logo"><img src="img/logo.svg" width="138" height="70" alt="logo SEDONA" /></a>
           <ul class="site-navigation second-navigation">
               <li><a class="navigation-item" href="#">Карта штата</a></li>
               <li><a class="navigation-item" href="catalog.html">Гостиницы</a></li>
@@ -38,7 +38,7 @@
         <h1 class="hidden">Filter hotel-search</h1>
         <form class="choice-of-hotels" action="https://echo.htmlacademy.ru/" method="post">
               <fieldset class="infrastructure">
-                  <legend>Инфраструктура:</legend>
+                  <legend class="infrastructure-name">Инфраструктура:</legend>
                   <ul class="infrastructure-options">
                       <li class="infrastructure-item">
                           <input class="checkbox-item" type="checkbox" name="infrastructure" id="infrastructure-basin" checked >
@@ -55,7 +55,7 @@
                   </ul>
               </fieldset>
               <fieldset class="type-of-housing">
-                  <legend>Тип жилья:</legend>
+                  <legend class="type-of-housing-name">Тип жилья:</legend>
                   <ul class="type-of-housing-options">
                     <li class="type-of-housing-item">
                         <input class="checkbox-item" type="checkbox" name="type-of-housing" id="type-of-housing-hotel" checked >
@@ -72,7 +72,7 @@
                   </ul>
               </fieldset>
                 <fieldset class="cost-of-housing">
-                  <legend>Стоимость в сутки (Р):</legend>
+                  <legend class="cost-of-housing-name">Стоимость в сутки (Р):</legend>
                   <ul class="cost-of-housing-options">
                       <li class="cost-of-housing-item">
                           <input class="min-price" type="text" name="min price" value="от 0">
@@ -90,9 +90,9 @@
           <h2 class="searched-result">НАЙДЕНО: 3</h2>
           <ul class="suggestions-options">
               <li class="suggestions-sort">Сортировка:</li>
-              <li><a class="suggestions-item" href="#">По цене</a></li>
-              <li><a class="suggestions-item" href="#">По типу</a></li>
-              <li><a class="suggestions-item" href="#">По рейтингу</a></li>
+              <li class="suggestions-sort-item"><a class="suggestions-item" href="#">По цене</a></li>
+              <li class="suggestions-sort-item"><a class="suggestions-item" href="#">По типу</a></li>
+              <li class="suggestions-sort-item"><a class="suggestions-item" href="#">По рейтингу</a></li>
           </ul>
           <div class="sort-by">
             <a class="sort-up" href="#">
