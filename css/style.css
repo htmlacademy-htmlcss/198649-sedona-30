@@ -62,6 +62,8 @@
 }
 
 .main-header {
+  position: relative;
+  min-height: 56px;
   line-height: 26px;
   font-weight: 700;
   width: 1200px;
@@ -80,16 +82,33 @@
 }
 
 .site-navigation {
-  list-style: none;
   display: grid;
-  grid-template-columns: 200px 200px;
+  grid-template-columns: 200px 200px 600px 200px 200px;
+  list-style: none;
   margin: 0;
   padding: 0;
 }
 
+.site-navigation li:first-child,
+.site-navigation li:nth-child(2) {
+  text-align: left;
+  margin: 15px 40px;
+}
+
+.site-navigation li:last-child,
+.site-navigation li:nth-child(3) {
+  text-align: right;
+  margin: 15px 40px;
+}
+
 .site-navigation a {
   display: block;
-  padding: 20px 0;
+}
+
+.main-header-logo {
+  position: absolute;
+  right: 530px;
+  z-index: 2;
 }
 
 .navigation-item {
@@ -108,6 +127,10 @@
 
 .active-page {
   color: var(--basic-brown);
+}
+
+.main-border-section {
+  position: relative;
 }
 
 .main-border {
@@ -256,12 +279,30 @@
   margin: 0 auto;
 }
 
-.another,
-.map-img {
+.another {
   background-color: var(--background-li);
   display: flex;
   flex-direction: column;
   justify-content: center;
+}
+
+.map-img {
+  background-color: var(--background-li);
+}
+
+.map-form-section {
+  position: relative;
+}
+
+.text-before-map {
+  margin-top: 60px;
+  margin-bottom: 110px;
+}
+
+.form-modal {
+  position: absolute;
+  right: 316px;
+  top: 105px;
 }
 
 .button {
@@ -271,6 +312,17 @@
   color: var(--basic-white);
   text-transform: uppercase;
   border: none;
+}
+
+.form-search-hotels {
+  width: 568px;
+  min-height: 481px;
+  font-weight: 700;
+  background-color: var(--basic-white);
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
 }
 
 .button.search-hotels-form {
@@ -288,22 +340,14 @@
 .button.search-hotels-form:active {
   background-color: var(--brown-active);
   border: none;
-}
-
-.form-modal.search-hotels {
-  width: 568px;
-  height: 395px;
-  font-weight: 700;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  flex-direction: row;
+  color: rgba(255, 255, 255, 30%);
 }
 
 .date-arrive-label,
 .date-leave-label,
 .number-of-people-label {
   display: block;
+
 }
 
 .date-arrive-input,
@@ -323,7 +367,8 @@
 }
 
 .button.search-hotels {
-  padding: 16px 182px;
+  width: 458px;
+  height: 58px;
   background: none;
   border: none;
   background-color: var(--basic-blue);
@@ -337,6 +382,7 @@
   background-color: var(--blue-active);
   opacity: 0.3;
   border: none;
+  color: rgba(255, 255, 255, 30%);
 }
 
 .search-hotels input {
@@ -361,6 +407,7 @@
   margin: 0 auto;
   display: grid;
   grid-template-columns: 400px 400px 400px;
+  z-index: 2;
 }
 
 .footer-contacts {
