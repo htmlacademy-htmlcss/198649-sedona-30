@@ -19,21 +19,18 @@
   <div class="background-shadow">
     <header class="main-header">
         <nav class="main-navigation">
-            <ul class="site-navigation first-navigation">
+            <ul class="site-navigation">
                 <li><a class="navigation-item" href="#">Информация</a></li>
                 <li><a class="navigation-item" href="#">Фото и видео</a></li>
-            </ul>
-            <a class="main-header-logo"><img src="img/logo.svg" width="138" height="70" alt="logo SEDONA" /></a>
-            <ul class="site-navigation second-navigation">
                 <li><a class="navigation-item" href="#">Карта штата</a></li>
                 <li><a class="navigation-item" href="catalog.html">Гостиницы</a></li>
             </ul>
-
+            <a class="main-header-logo"><img src="img/logo.svg" width="138" height="70" alt="logo SEDONA" /></a>
         </nav>
     </header>
 
     <main class="container">
-        <section>
+        <section class="main-border-section">
             <h1 class="hidden">Sedona</h1>
             <div class="main-border">
                 <svg class="text-border" width="458" height="352" viewBox="0 0 458 352" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -122,40 +119,44 @@
                 </li>
             </ul>
         </section>
-        <section class="map">
-            <h2 class="hidden">Карта</h2>
-            <h2>Заинтересовались?</h2>
-            <p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
-            <button class="button search-hotels-form" type="button">Поиск гостинницы в Седоне</button>
-            <p>
+        <section class="map-form-section">
+          <section class="map">
+            <div class="text-before-map">
+              <h2 class="hidden">Карта</h2>
+              <h2>Заинтересовались?</h2>
+              <p class="text-before-form">Укажите предполагаемые даты поездки,<br/>
+                и мы покажем вам лучшие предложения гостиниц в седоне</p>
+              </div>
+              <p>
               <img class="map-img" src="img/map.png" width="1199" height="594" alt="local map">
-            </p>
-        </section>
-
-        <section class="form-modal search-hotels">
+              </p>
+          </section>
+          <section class="form-modal search-hotels">
             <form action="https://echo.htmlacademy.ru/" class="form-search-hotels" method="post">
+              <button class="button search-hotels-form" type="button">Поиск гостинницы в Седоне</button>
                 <p class="search-hotels-items">
                     <label class="date-arrive-label" for="hotel-date-arrive">Дата заезда:
-          <input class="date-arrive-input" type="text" name="hotel-date-arrive" id="hotel-date-arrive" value="24 апреля 2017">
-        </label>
+                       <input class="date-arrive-input" type="text" name="hotel-date-arrive" id="hotel-date-arrive" value="24 апреля 2017">
+                    </label>
                 </p>
                 <p class="search-hotels-items">
                     <label class="date-leave-label" for="hotel-date-leave">Дата выезда:
-          <input class="date-leave-input" type="text" name="hotel-date-leave" id="hotel-date-leave" Value="4 июля 2017">
-        </label>
+                       <input class="date-leave-input" type="text" name="hotel-date-leave" id="hotel-date-leave" Value="4 июля 2017">
+                     </label>
                 </p>
                 <p class="search-hotels-items">
                     <label class="number-of-people-label" for="hotel-number_of_people">Взрослые:
-          <input class="number-of-people-input" type="number" name="hotel-number_of_people" id="hotel-number_of_people" Value="2" min="1" max="5" step="1">
-        </label>
+                      <input class="number-of-people-input" type="number" name="hotel-number_of_people" id="hotel-number_of_people" Value="2" min="1" max="5" step="1">
+                    </label>
                 </p>
                 <p class="search-hotels-items">
                     <label class="number_of_children-label" for="hotel-number_of_children">Дети:
-        <input class="number_of_children-input" type="number" name="hotel-number_of_children" id="hotel-number_of_children" Value="0" min="0" max="5" step="1">
-      </label>
+                      <input class="number_of_children-input" type="number" name="hotel-number_of_children" id="hotel-number_of_children" Value="0" min="0" max="5" step="1">
+                    </label>
                 </p>
                 <button class="button search-hotels" type="submit">Найти</button>
             </form>
+          </section>
         </section>
     </main>
 
