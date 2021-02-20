@@ -21,16 +21,13 @@
   <div class="background-shadow">
     <header class="main-header">
       <nav class="main-navigation">
-          <ul class="site-navigation first-navigation">
+          <ul class="site-navigation">
               <li><a class="navigation-item" href="#">Информация</a></li>
               <li><a class="navigation-item" href="#">Фото и видео</a></li>
-          </ul>
-          <a href="index.html" class="main-header-logo"><img src="img/logo.svg" width="138" height="70" alt="logo SEDONA" /></a>
-          <ul class="site-navigation second-navigation">
               <li><a class="navigation-item" href="#">Карта штата</a></li>
               <li><a class="navigation-item active-page" href="catalog.html">Гостиницы</a></li>
           </ul>
-
+          <a class="main-header-logo" href="index.html"><img src="img/logo.svg" width="138" height="70" alt="logo SEDONA" /></a>
       </nav>
   </header>
 
@@ -42,15 +39,15 @@
                   <legend class="infrastructure-name">Инфраструктура:</legend>
                   <ul class="infrastructure-options">
                       <li class="infrastructure-item">
-                          <input class="checkbox-item" type="checkbox" name="infrastructure" id="infrastructure-basin" checked >
+                          <input class="checkbox-item hidden" type="checkbox" name="infrastructure" id="infrastructure-basin" checked >
                           <label for="infrastructure-basin">Бассейн</label>
                       </li>
                       <li class="infrastructure-item">
-                        <input class="checkbox-item" type="checkbox" name="infrastructure" id="infrastructure-parking">
+                        <input class="checkbox-item hidden" type="checkbox" name="infrastructure" id="infrastructure-parking">
                         <label for="infrastructure-parking">Парковка</label>
                     </li>
                     <li class="infrastructure-item">
-                        <input class="checkbox-item" type="checkbox" name="infrastructure" id="infrastructure-wi-fi">
+                        <input class="checkbox-item hidden" type="checkbox" name="infrastructure" id="infrastructure-wi-fi">
                         <label for="infrastructure-wi-fi">Wi-Fi</label>
                     </li>
                   </ul>
