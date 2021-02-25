@@ -16,6 +16,11 @@
   font-style: normal;
 }
 
+#form-search-hotels * {
+  padding: 0;
+  margin: 0;
+  }
+
 /* variables */
 :root {
 --basic-black: #000000;
@@ -83,7 +88,7 @@
 
 .site-navigation {
   display: grid;
-  grid-template-columns: 200px 200px 600px 200px 200px;
+  grid-template-columns: 200px 200px 600px 200px;
   list-style: none;
   margin: 0;
   padding: 0;
@@ -404,7 +409,6 @@
 }
 
 .text-before-map {
-
   margin-top: 60px;
   padding-bottom: 120px;
 }
@@ -426,13 +430,15 @@
 
 .form-search-hotels {
   width: 568px;
-  min-height: 481px;
+  height: 395px;
   font-weight: 700;
   background-color: var(--basic-white);
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: center;
+  align-items: center;
+
 }
 
 .button.search-hotels-form {
@@ -456,29 +462,26 @@
 }
 
 .date-arrive-label,
-.date-leave-label,
-.number-of-people-label {
-  display: block;
+.date-leave-label {
+  line-height: 26px;
+
 }
 
 .date-arrive-input,
 .date-leave-input {
   width: 346px;
   height: 38px;
-  margin: 0 5px;
-  padding: 0 5px;
+
 }
 
 .number-of-people-input,
 .number_of_children-input {
   width: 114px;
   height: 38px;
-  margin: 0 5px;
-  padding: 0 5px;
 }
 
 .number_of_children-label {
-  display: block;
+  line-height: 26px;
 }
 
 .button.search-hotels {
@@ -529,6 +532,15 @@
   display: grid;
   grid-template-columns: 400px 400px 400px;
   z-index: 2;
+}
+
+.footer-catalog {
+  width: 1200px;
+  min-height: 120px;
+  line-height: 26px;
+  background-color: rgba(255, 255, 255, 0.9);
+  display: grid;
+  grid-template-columns: 400px 400px 400px;
 }
 
 .footer-contacts {
