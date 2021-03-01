@@ -55,15 +55,15 @@
                   <legend class="type-of-housing-name">Тип жилья:</legend>
                   <ul class="type-of-housing-options">
                     <li class="type-of-housing-item">
-                        <input class="checkbox-item" type="checkbox" name="type-of-housing" id="type-of-housing-hotel" checked >
+                        <input class="checkbox-item hidden" type="checkbox" name="type-of-housing" id="type-of-housing-hotel" checked >
                         <label for="type-of-housing-hotel">Гостиница</label>
                     </li>
                     <li class="type-of-housing-item">
-                        <input  class="checkbox-item" type="checkbox" name="type-of-housing" id="type-of-housing-motel" checked >
+                        <input  class="checkbox-item hidden" type="checkbox" name="type-of-housing" id="type-of-housing-motel" checked >
                         <label for="type-of-housing-motel">Мотель</label>
                     </li>
                     <li class="type-of-housing-item">
-                        <input class="checkbox-item" type="checkbox" name="type-of-housing" id="type-of-housing-apartment" checked >
+                        <input class="checkbox-item hidden" type="checkbox" name="type-of-housing" id="type-of-housing-apartment" checked >
                         <label for="type-of-housing-apartment">Апартаменты</label>
                     </li>
                   </ul>
@@ -78,7 +78,15 @@
                         <input class="max-price" type="text" name="max price" value="До 3000">
                     </li>
                   </ul>
-                  <input class="range-item" type="range" min="0" max="3000" value="100">
+                  <div class="range-filter">
+                    <div class="range-controls">
+                      <div class="scale">
+                        <div class="bar"></div>
+                      </div>
+                      <div class="toggle toggle-min"></div>
+                      <div class="toggle toggle-max"></div>
+                    </div>
+                  </div>
                  </fieldset>
                  <button class="button search-of-hotels" type="submit">Показать</button>
           </form>
@@ -97,7 +105,7 @@
                 <path d="M5.5 0L0 10H11L5.5 0Z" fill="#CACACA"/>
                 </svg>
             </a>
-            <a class="sort-down" href="#">
+            <a class="sort-down sort-active" href="#">
             <svg width="11" height="10" viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M5.5 10L0 0H11"/>
             </svg>
@@ -116,11 +124,11 @@
                   </a>
                   </div>
                   <div class="column-hotel-detail">
-                  <a href="#"><h2 class="hotel-name">Amara Resort & Spa</h2></a>
-                  <div class="row-hotel-type">
-                  <p class="hotel-type">Гостиница</p>
-                  <p class="hotel-price">От 4000 Р.</p>
-                  </div>
+                    <a href="#"><h2 class="hotel-name">Amara Resort & Spa</h2></a>
+                    <div class="row-hotel-type">
+                      <p class="hotel-type">Гостиница</p>
+                      <p class="hotel-price">От 4000 Р.</p>
+                    </div>
                   <p class="row-hotel-buttons">
                       <button class="hotel-detail" type="button">Подробнее</button>
                       <button class="book-order" type="button">Забронировать</button>
