@@ -757,6 +757,7 @@
   left: -42px;
   width: 27px;
   height: 23px;
+  background-image: none;
   background-image: url("../img/checkbox-on_catalog.svg");
   background-repeat: no-repeat;
   background-position:  0 0;
@@ -857,6 +858,15 @@
   left: 260px;
 }
 
+.range-controls .toggle:active {
+  width: 5px;
+  height: 5px;
+  padding: 0;
+  border: 10px solid var(--basic-white);
+  background-color: var(--background-toggle);
+  border-radius: 50%;
+}
+
 .button.search-of-hotels {
   grid-row: 2/3;
 }
@@ -896,9 +906,8 @@
 
 .search-of-hotels {
   height: 36px;
-  max-width: 137px;
-  margin-left: 265px;
-  margin-top: -35px;
+  width: 137px;
+  margin-top: 7px;
   border: 2px solid var(--basic-white);
   background: none;
 }
@@ -954,6 +963,12 @@
   text-decoration-style: dotted;
 }
 
+.item-active {
+  color: var(--basic-blue);
+  text-decoration: none;
+  opacity: 1;
+}
+
 .suggestions-item:hover {
   color: var(--basic-blue);
   opacity: 1;
@@ -988,12 +1003,16 @@
   fill: var(--basic-blue);
 }
 
-.sort-active {
+.sort-active path {
   fill: var(--basic-blue);
 }
 
 .sort-down path:active {
   fill: var(--basic-blue);
+}
+
+.suggestions-found {
+  border-bottom: 1px solid #E5E5E5;
 }
 
 .hotels-found-item a {
@@ -1013,9 +1032,15 @@
 }
 
 .hotels-found-item {
+  vertical-align: middle;
   display: grid;
   grid-template-columns: 200px auto 200px;
-  margin: 20px 40px;
+  margin-top: 15px;
+  margin-left: 40px;
+  margin-right: 40px;
+  margin-bottom: 20px;
+  padding-bottom: 5px;
+  border-bottom: 1px solid #E5E5E5;
 }
 
 .column-hotel-photo {
@@ -1025,11 +1050,8 @@
 
 .column-hotel-detail {
   grid-column: 2/3;
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  align-items: flex-start;
+  display: grid;
+  grid-template-rows: 27px 43px 27px;
 }
 
 .column-hotel-rating{
@@ -1041,6 +1063,7 @@
 }
 
 .hotel-name {
+  grid-row: 1/2;
   display: block;
   margin: 0;
   padding: 0;
@@ -1054,22 +1077,31 @@
 }
 
 .row-hotel-type {
- text-align: left;
+  grid-row: 2/3;
+  text-align: left;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
 }
 
 .hotel-type,
 .hotel-price {
   display: inline-block;
+  width: 110px;
+  height: 43px;
 }
 
 .hotel-price {
-  margin-left: 20px;
+  margin-left: 5px;
 }
 
 .row-hotel-buttons {
+  grid-row: 3/4;
   display: block;
   text-align: left;
-  margin-top: 0;
+  margin-top: 5px;
 }
 
 .hotel-name:hover {
