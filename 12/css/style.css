@@ -750,6 +750,12 @@
   background-position: 0 0;
 }
 
+.checkbox-item:disabled + label::before {
+  background-image: url(../img/checkbox_disabled.svg);
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
 .checkbox-item:checked + label::after {
   content: "";
   position: absolute;
@@ -757,10 +763,15 @@
   left: -42px;
   width: 27px;
   height: 23px;
-  background-image: none;
   background-image: url("../img/checkbox-on_catalog.svg");
   background-repeat: no-repeat;
   background-position:  0 0;
+}
+
+.checkbox-item:checked:disabled + label::after {
+  background-image: url(../img/checkbox-on_disabled.svg);
+  background-repeat: no-repeat;
+  background-position: 0 0;
 }
 
 .cost-of-housing {
@@ -794,9 +805,24 @@
   margin-left: 10px;
 }
 
+.cost-of-housing-options::after {
+  content: "";
+  position: absolute;
+  top: 118px;
+  right: 578px;
+  width: 2px;
+  height: 22px;
+  margin-left: -10px;
+  background-color: var(--basic-white);
+}
+
 .cost-of-housing-item {
   margin: 0;
   padding: 0;
+}
+
+.cost-of-housing-item input{
+  border: none;
 }
 
 .min-price {
@@ -858,7 +884,8 @@
   left: 260px;
 }
 
-.range-controls .toggle:active {
+.range-controls .toggle:hover {
+  cursor: pointer;
   width: 5px;
   height: 5px;
   padding: 0;
@@ -951,16 +978,22 @@
 
 .sort-by {
   grid-column: 3/4;
-  margin-left: 25px;
-  margin-top: 35px;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  margin-left: 90px;
+  margin-top: 10px;
 }
 
 .suggestions-item {
   font-size: 12px;
   line-height: 18px;
-  color: var(--basic-black);
-  opacity: 0.3;
   text-decoration-style: dotted;
+  text-decoration-color: var(--basic-blue);
+  color: rgba(0, 0, 0, 30%);
 }
 
 .item-active {
@@ -981,14 +1014,14 @@
   opacity: 1;
 }
 
+.sort-by li {
+  margin: 25px 5px;
+}
+
 .sort-down path,
 .sort-up path{
   fill: var(--icon-up-color);
   text-decoration: none;
-}
-
-.sort-down {
-  margin-left: 10px;
 }
 
 .sort-up path:hover {
@@ -1035,11 +1068,10 @@
   vertical-align: middle;
   display: grid;
   grid-template-columns: 200px auto 200px;
-  margin-top: 15px;
-  margin-left: 40px;
-  margin-right: 40px;
-  margin-bottom: 20px;
-  padding-bottom: 5px;
+  padding-top: 15px;
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-bottom: 10px;
   border-bottom: 1px solid #E5E5E5;
 }
 
