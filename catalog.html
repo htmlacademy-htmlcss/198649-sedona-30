@@ -5,9 +5,9 @@
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
     <link rel="icon" href="favicon.ico">
-    <link rel="icon" href="img/favicon/32.svg" type="image/svg+×ml">
+    <link rel="icon" href="img/favicon/32.svg">
     <link rel="apple-touch-icon" href="img/favicon/152.svg">
-
+    <link rel="manifest" href="favicon.webmanifest">
 
     <link href="css/style.css" rel="stylesheet">
     <link href="css/normalize.css" rel="stylesheet">
@@ -59,7 +59,7 @@
                         <label for="type-of-housing-hotel">Гостиница</label>
                     </li>
                     <li class="type-of-housing-item">
-                        <input  class="checkbox-item hidden" type="checkbox" name="type-of-housing" id="type-of-housing-motel" checked >
+                        <input  class="checkbox-item hidden" type="checkbox" name="type-of-housing" id="type-of-housing-motel" checked>
                         <label for="type-of-housing-motel">Мотель</label>
                     </li>
                     <li class="type-of-housing-item">
@@ -99,18 +99,22 @@
               <li class="suggestions-sort-item"><a class="suggestions-item" href="#">По типу</a></li>
               <li class="suggestions-sort-item"><a class="suggestions-item" href="#">По рейтингу</a></li>
           </ul>
-          <div class="sort-by">
+          <ul class="sort-by">
+            <li>
             <a class="sort-up" href="#">
               <svg width="11" height="10" viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M5.5 0L0 10H11"/>
-                </svg>
+                <path d="M5.5 0L0 10H11L5.5 0Z" fill="#CACACA"/>
+              </svg>
             </a>
+            </li>
+            <li>
             <a class="sort-down sort-active" href="#">
             <svg width="11" height="10" viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M5.5 10L0 0H11"/>
             </svg>
             </a>
-          </div>
+            </li>
+          </ul>
       </section>
       <section class="hotels-found">
           <h1 class="hidden">Hotels Found</h1>
