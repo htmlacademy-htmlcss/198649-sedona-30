@@ -717,7 +717,7 @@
 
 .type-of-housing-name {
   padding-top: 25px;
-  margin-left: 15px;
+  margin-left: 10px;
 }
 
 .type-of-housing-options li {
@@ -735,7 +735,7 @@
   display: block;
   cursor: pointer;
   user-select: none;
-  margin: 25px 20px;
+  margin: 25px 15px;
 }
 
 .checkbox-item + label::before {
@@ -789,11 +789,12 @@
 }
 
 .cost-of-housing-name {
-  margin-left: 80px;
+  margin-left: 75px;
   padding-top: 15px;
 }
 
 .cost-of-housing-options {
+  position: relative;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -801,15 +802,16 @@
   padding: 0;
   border: none;
   border: 1px solid var(--basic-white);
-  margin-top: 10px;
-  margin-left: 10px;
+  margin-top: 12px;
+
 }
 
 .cost-of-housing-options::after {
+  position: absolute;
   content: "";
   position: absolute;
-  top: 118px;
-  right: 578px;
+  top: 5px;
+  left: 170px;
   width: 2px;
   height: 22px;
   margin-left: -10px;
@@ -821,7 +823,19 @@
   padding: 0;
 }
 
+.cost-of-housing label {
+  margin: 0;
+  padding: 0;
+}
+
 .cost-of-housing-item input{
+  padding: 0;
+  margin: 0;
+  border: none;
+  width: 137px;
+}
+
+.cost-of-housing-item input:active {
   border: none;
 }
 
@@ -932,9 +946,8 @@
 }
 
 .search-of-hotels {
-  height: 36px;
-  width: 137px;
-  margin-top: 7px;
+  padding: 6px 28px;
+  margin-top: 10px;
   border: 2px solid var(--basic-white);
   background: none;
 }
@@ -1147,9 +1160,9 @@
 .hotel-rating {
   display: block;
   text-align: center;
-  width: 110px;
-  height: 27px;
+  padding: 2px 5px;
   background-color: var(--input-background);
+  width: 110px;
   color: var(--rating-color);
   margin-left: 10px;
 }
@@ -1160,8 +1173,7 @@
 }
 
 .hotel-detail {
-  width: 110px;
-  height: 27px;
+  padding: 5px 16px;
   font-weight: 700;
   background: none;
   border: none;
@@ -1179,8 +1191,7 @@
 }
 
 .book-order {
-  width: 142px;
-  height: 27px;
+  padding: 5px 18px;
   background: none;
   border: none;
   font-weight: 700;
