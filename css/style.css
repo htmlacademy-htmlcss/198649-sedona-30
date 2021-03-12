@@ -405,6 +405,12 @@
   margin: 0;
 }
 
+.map-sedona {
+  object-fit: contain;
+  max-width: 1200px;
+  max-height: 594px;
+}
+
 .became_interested {
   font-family: PT Sans;
   font-style: normal;
@@ -547,6 +553,10 @@
   border: none;
   margin: 0;
   padding: 0;
+}
+
+.button-calendar:active {
+  border: none;
 }
 
 .button-calendar svg {
