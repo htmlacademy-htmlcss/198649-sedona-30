@@ -803,7 +803,7 @@
   border: none;
   border: 1px solid var(--basic-white);
   margin-top: 12px;
-
+  width: 317px;
 }
 
 .cost-of-housing-options::after {
@@ -819,20 +819,30 @@
 }
 
 .cost-of-housing-item {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
   margin: 0;
   padding: 0;
 }
 
-.cost-of-housing label {
+.cost-of-housing-item label {
   margin: 0;
   padding: 0;
+  text-align: right;
+  width: 70px;
+  padding-left: 14px;
 }
 
 .cost-of-housing-item input{
   padding: 0;
   margin: 0;
   border: none;
-  width: 137px;
+  text-align: left;
+  width: 55px;
+  padding-left: 5px;
 }
 
 .cost-of-housing-item input:active {
@@ -946,14 +956,14 @@
 }
 
 .search-of-hotels {
-  padding: 6px 28px;
+  padding: 6px 34px;
+  margin-right: 6px;
   margin-top: 10px;
   border: 2px solid var(--basic-white);
   background: none;
 }
 
 .search-of-hotels:hover {
-  padding: 8px 36px;
   border: 2px solid var(--basic-white);
   background-color: var(--basic-white);
   color: var(--basic-black);
@@ -1080,7 +1090,7 @@
 .hotels-found-item {
   vertical-align: middle;
   display: grid;
-  grid-template-columns: 200px auto 200px;
+  grid-template-columns: 198px auto 200px;
   padding-top: 15px;
   padding-left: 40px;
   padding-right: 40px;
@@ -1095,8 +1105,8 @@
 
 .column-hotel-detail {
   grid-column: 2/3;
-  display: grid;
-  grid-template-rows: 27px 43px 27px;
+  display: flex;
+  flex-direction: column;
 }
 
 .column-hotel-rating{
@@ -1108,8 +1118,6 @@
 }
 
 .hotel-name {
-  grid-row: 1/2;
-  display: block;
   margin: 0;
   padding: 0;
   line-height: 26px;
@@ -1118,24 +1126,24 @@
   color: var(--basic-black);
   text-decoration: none;
   text-align: left;
-  margin-top: 10px;
+  margin-top: 8px;
 }
 
 .row-hotel-type {
-  grid-row: 2/3;
   text-align: left;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: flex-start;
   align-items: center;
+  margin-top: 7px;
 }
 
 .hotel-type,
 .hotel-price {
   display: inline-block;
   width: 110px;
-  height: 43px;
+  margin-top: 0;
 }
 
 .hotel-price {
@@ -1143,10 +1151,8 @@
 }
 
 .row-hotel-buttons {
-  grid-row: 3/4;
-  display: block;
   text-align: left;
-  margin-top: 5px;
+  margin-top: 2px;
 }
 
 .hotel-name:hover {
@@ -1164,7 +1170,9 @@
   background-color: var(--input-background);
   width: 110px;
   color: var(--rating-color);
-  margin-left: 10px;
+  margin-left: 6px;
+  margin-right: 32px;
+  margin-bottom: 21px;
 }
 
 .rating-star {
@@ -1198,6 +1206,7 @@
   text-transform: uppercase;
   color: var(--basic-white);
   background-color: var(--basic-brown);
+  margin-left: 2px;
 }
 
 .book-order:hover {
