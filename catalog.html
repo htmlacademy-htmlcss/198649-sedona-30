@@ -5,9 +5,9 @@
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
     <link rel="icon" href="favicon.ico">
-    <link rel="icon" href="img/favicon/32.svg" type="image/svg+×ml">
+    <link rel="icon" href="img/favicon/32.svg">
     <link rel="apple-touch-icon" href="img/favicon/152.svg">
-
+    <link rel="manifest" href="favicon.webmanifest">
 
     <link href="css/style.css" rel="stylesheet">
     <link href="css/normalize.css" rel="stylesheet">
@@ -55,15 +55,15 @@
                   <legend class="type-of-housing-name">Тип жилья:</legend>
                   <ul class="type-of-housing-options">
                     <li class="type-of-housing-item">
-                        <input class="checkbox-item" type="checkbox" name="type-of-housing" id="type-of-housing-hotel" checked >
+                        <input class="checkbox-item hidden" type="checkbox" name="type-of-housing" id="type-of-housing-hotel" checked >
                         <label for="type-of-housing-hotel">Гостиница</label>
                     </li>
                     <li class="type-of-housing-item">
-                        <input  class="checkbox-item" type="checkbox" name="type-of-housing" id="type-of-housing-motel" checked >
+                        <input  class="checkbox-item hidden" type="checkbox" name="type-of-housing" id="type-of-housing-motel" checked>
                         <label for="type-of-housing-motel">Мотель</label>
                     </li>
                     <li class="type-of-housing-item">
-                        <input class="checkbox-item" type="checkbox" name="type-of-housing" id="type-of-housing-apartment" checked >
+                        <input class="checkbox-item hidden" type="checkbox" name="type-of-housing" id="type-of-housing-apartment" checked >
                         <label for="type-of-housing-apartment">Апартаменты</label>
                     </li>
                   </ul>
@@ -72,37 +72,51 @@
                   <legend class="cost-of-housing-name">Стоимость в сутки (Р):</legend>
                   <ul class="cost-of-housing-options">
                       <li class="cost-of-housing-item">
-                          <input class="min-price" type="text" name="min price" value="от 0">
+                        <label for="cost-of-housing-min-price">От</label>
+                          <input class="min-price" type="text" name="min price" id="cost-of-housing-min-price" value="0">
                       </li>
                       <li class="cost-of-housing-item">
-                        <input class="max-price" type="text" name="max price" value="До 3000">
+                        <label for="cost-of-housing-max-price">До</label>
+                        <input class="max-price" type="text" name="max price" id="cost-of-housing-max-price" value="3000">
                     </li>
                   </ul>
-                  <input class="range-item" type="range" min="0" max="3000" value="100">
-                 </fieldset>
+                  <div class="range-filter">
+                    <div class="range-controls">
+                      <div class="scale">
+                        <div class="bar"></div>
+                      </div>
+                      <div class="toggle toggle-min"></div>
+                      <div class="toggle toggle-max"></div>
+                    </div>
+                  </div>
                  <button class="button search-of-hotels" type="submit">Показать</button>
+                </fieldset>
           </form>
       </section>
       <section class="suggestions-found">
           <h2 class="searched-result">НАЙДЕНО: 3</h2>
           <ul class="suggestions-options">
               <li class="suggestions-sort">Сортировка:</li>
-              <li class="suggestions-sort-item"><a class="suggestions-item" href="#">По цене</a></li>
+              <li class="suggestions-sort-item"><a class="suggestions-item item-active" href="#">По цене</a></li>
               <li class="suggestions-sort-item"><a class="suggestions-item" href="#">По типу</a></li>
               <li class="suggestions-sort-item"><a class="suggestions-item" href="#">По рейтингу</a></li>
           </ul>
-          <div class="sort-by">
+          <ul class="sort-by">
+            <li>
             <a class="sort-up" href="#">
               <svg width="11" height="10" viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M5.5 0L0 10H11L5.5 0Z" fill="#CACACA"/>
-                </svg>
+              </svg>
             </a>
-            <a class="sort-down" href="#">
+            </li>
+            <li>
+            <a class="sort-down sort-active" href="#">
             <svg width="11" height="10" viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M5.5 10L0 0H11"/>
             </svg>
             </a>
-          </div>
+            </li>
+          </ul>
       </section>
       <section class="hotels-found">
           <h1 class="hidden">Hotels Found</h1>
@@ -115,16 +129,18 @@
                       </p>
                   </a>
                   </div>
+                  <div class="hotel-information-layout">
                   <div class="column-hotel-detail">
-                  <a href="#"><h2 class="hotel-name">Amara Resort & Spa</h2></a>
-                  <div class="row-hotel-type">
-                  <p class="hotel-type">Гостиница</p>
-                  <p class="hotel-price">От 4000 Р.</p>
-                  </div>
+                    <a href="#"><h2 class="hotel-name">Amara Resort & Spa</h2></a>
+                    <div class="row-hotel-type">
+                      <p class="hotel-type">Гостиница</p>
+                      <p class="hotel-price">От 4000 Р.</p>
+                    </div>
                   <p class="row-hotel-buttons">
                       <button class="hotel-detail" type="button">Подробнее</button>
                       <button class="book-order" type="button">Забронировать</button>
                   </p>
+                  </div>
                   </div>
                   <div class="column-hotel-rating">
                   <p class="rating-star">
@@ -148,7 +164,8 @@
                     </p>
                 </a>
                 </div>
-                <div class="column-hotel-detail>
+                <div class="hotel-information-layout">
+                <div class="column-hotel-detail">
                 <a href="#"><h2 class="hotel-name">Desert Quail Inn</h2></a>
                 <div class="row-hotel-type">
                 <p class="hotel-type">Мотель</p>
@@ -158,6 +175,7 @@
                     <button class="hotel-detail" type="button">Подробнее</button>
                     <button class="book-order" type="button">Забронировать</button>
                 </p>
+                </div>
                 </div>
                 <div class="column-hotel-rating">
                 <p class="rating-star">
@@ -180,6 +198,7 @@
                     </p>
                 </a>
                 </div>
+                <div class="hotel-information-layout">
                 <div class="column-hotel-detail">
                 <a href="#"><h2 class="hotel-name">Villas at Poco Diablo</h2></a>
                 <div class="row-hotel-type">
@@ -191,6 +210,7 @@
                     <button class="book-order" type="button">Забронировать</button>
                 </p>
                 </div>
+              </div>
                 <div class="column-hotel-rating">
                 <p class="rating-star">
                   <svg width="42" height="17" viewBox="0 0 42 17" fill="none" xmlns="http://www.w3.org/2000/svg">
