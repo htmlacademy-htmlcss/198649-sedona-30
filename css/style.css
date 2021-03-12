@@ -16,7 +16,7 @@
   font-style: normal;
 }
 
-#form-search-hotels * {
+.form-modal * {
   padding: 0;
   margin: 0;
   }
@@ -231,6 +231,9 @@
 .second-foto {
   grid-column: 1/-2;
   grid-row: 2/3;
+  max-width: 800px;
+  max-height: 256px;
+  object-fit: contain;
 }
 
 .second-features {
@@ -303,6 +306,9 @@
 .first-foto {
   grid-column: 2/-1;
   grid-row: 1/2;
+  max-width: 800px;
+  max-height: 256px;
+  object-fit: contain;
 }
 
 .future-adventure {
@@ -399,6 +405,12 @@
   margin: 0;
 }
 
+.map-sedona {
+  object-fit: contain;
+  max-width: 1200px;
+  max-height: 594px;
+}
+
 .became_interested {
   font-family: PT Sans;
   font-style: normal;
@@ -430,8 +442,8 @@
 }
 
 .form-search-hotels {
-  width: 568px;
-  height: 395px;
+  width: 528px;
+  height: 355px;
   font-weight: 700;
   background-color: var(--basic-white);
   display: flex;
@@ -439,7 +451,8 @@
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-
+  padding: 20px;
+  box-shadow: 0px 7px 15px rgba(0, 1, 1, 0.15);
 }
 
 .button.search-hotels-form {
@@ -465,24 +478,47 @@
 .date-arrive-label,
 .date-leave-label {
   line-height: 26px;
+  margin-right: 5px;
+}
 
+.date-input-button {
+  width: 346px;
+  height: 38px;
+  background-color: var(--input-background);
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0;
+  margin-left: 15px;
+  margin-right: 5px;
+}
+
+.number-input-button {
+  width: 114px;
+  height: 38px;
+  background-color: var(--input-background);
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  margin-left: 20px;
 }
 
 .date-arrive-input,
 .date-leave-input {
-  width: 346px;
-  height: 38px;
-
+  padding-left: 15px;
 }
 
 .number-of-people-input,
 .number_of_children-input {
-  width: 114px;
-  height: 38px;
+  width: 25px;
+  padding-left: 20px;
 }
 
 .number_of_children-label {
   line-height: 26px;
+  margin-left: 60px;
 }
 
 .button.search-hotels {
@@ -511,6 +547,67 @@
 .search-hotels input {
   background-color: var(--input-background);
   border: none;
+}
+
+.button-calendar {
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+
+.button-calendar:active {
+  border: none;
+}
+
+.button-calendar svg {
+  fill: var(--icon-input-color);
+  padding-right: 10px;
+}
+
+.button-calendar svg:hover {
+  fill: var(--basic-black);
+}
+
+.button-calendar svg:active {
+  fill: var(--basic-blue);
+}
+
+.button-minus-one {
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+
+.button-minus-one svg {
+  fill: var(--icon-input-color);
+  padding-left: 10px;
+}
+
+.button-minus-one svg:hover {
+  fill: var(--basic-black);
+}
+
+.button-minus-one svg:active {
+  fill: var(--basic-blue);
+}
+
+.button-plus-one {
+  border: none;
+  margin: 0;
+  padding: o;
+  padding-right: 10px;
+}
+
+.button-plus-one svg {
+  fill: var(--icon-input-color);
+}
+
+.button-plus-one svg:hover {
+  fill: var(--basic-black);
+}
+
+.button-plus-one svg:active {
+  fill: var(--basic-blue);
 }
 
 .search-hotels input:hover {
